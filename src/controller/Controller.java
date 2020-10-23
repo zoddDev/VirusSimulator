@@ -139,14 +139,14 @@ public class Controller {
             int y = v.getPosition().y;
 
             // Virus movement
-//            {
-//                Random rand = new Random();
-//                int fx = rand.nextInt(3) - 1;
-//                int fy = rand.nextInt(3) - 1;
-//                x += fx;
-//                y += fy;
-//                v.setPosition(new Point(x, y));
-//            }
+            {
+                Random rand = new Random();
+                int fx = rand.nextInt(3) - 1;
+                int fy = rand.nextInt(3) - 1;
+                x += fx;
+                y += fy;
+                v.setPosition(new Point(x, y));
+            }
 
             if(!v.isDone()) {
                 if(v.canSpread()) {
